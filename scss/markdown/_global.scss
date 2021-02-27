@@ -1,0 +1,35 @@
+.markdown {
+  * {
+    box-sizing: border-box;
+  }
+
+  &:after,
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  &>:first-child {
+    margin-top: 0!important;
+  }
+
+  &>:last-child {
+    margin-bottom: 0!important;
+  }
+
+  blockquote,
+  details,
+  dl,
+  ol,
+  p,
+  pre,
+  table,
+  ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}

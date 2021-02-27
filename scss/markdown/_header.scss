@@ -1,0 +1,47 @@
+@mixin header {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+@mixin main-header {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown {
+  h1 {
+    @include header;
+    @include main-header;
+    font-size: 2em;
+    margin: .67em 0;
+  }
+
+  h2 {
+    @include header;
+    @include main-header;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    @include header;
+    font-size: 1.25em;
+  }
+
+  h4 {
+    @include header;
+    font-size: 1em;
+  }
+
+  h5 {
+    @include header;
+    font-size: .875em;
+  }
+
+  h6 {
+    @include header;
+    font-size: .85em;
+    color: #6a737d;
+  }
+}

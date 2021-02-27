@@ -1,0 +1,36 @@
+.markdown {
+  code {
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.05);
+    border-radius: 3px;
+  }
+
+  pre {
+    margin-bottom: 0;
+    padding: 16px;
+    overflow: auto;
+    word-wrap: normal;
+    word-break: normal;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+
+    code {
+      display: inline;
+      max-width: auto;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      overflow: visible;
+      line-height: inherit;
+      background: transparent;
+      word-wrap: normal;
+      word-break: normal;
+      white-space: pre;
+      font-size: 100%;
+    }
+  }
+}

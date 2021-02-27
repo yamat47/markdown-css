@@ -1,0 +1,13 @@
+.markdown {
+  summary {
+    display: list-item;
+  }
+
+  details {
+    display: block;
+
+    summary {
+      cursor: pointer;
+    }
+  }
+}
