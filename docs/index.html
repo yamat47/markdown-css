@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="markdown.css" />
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+
+      .markdown {
+        background-color: #ffffff;
+        margin: 1em;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>yamat47/markdown-css demo</h1>
+    <section>
+      <h2>Headers</h2>
+      <div class="markdown">
+        <h1>This is h1 header.</h1>
+        <h2>This is h2 header.</h2>
+        <h3>This is h3 header.</h3>
+        <h4>This is h4 header.</h4>
+        <h5>This is h5 header.</h5>
+        <h6>This is h6 header.</h6>
+      </div>
+    </section>
+
+    <section>
+      <h2>emphasis</h2>
+      <div class="markdown">
+        <p><em>This is italic text.</em></p>
+        <p><strong>This is strong text.</strong></p>
+        <p><em>This is <strong>combined</strong> text.</em></p>
+        <p><del>This is strikethrough text</del></p>
+        <p><code>&lt;kbd&gt;</code> tag is supported: <kbd>ctrl</kbd> + <kbd>v</kbd></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lists</h2>
+      <div class="markdown">
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+        </ul>
+
+        <ol>
+          <li>item 1</li>
+          <li>item 2</li>
+        </ol>
+
+        <ul class="contains-task-list">
+          <li class="task-list-item">
+            <input type="checkbox" checked="" disabled=""> task 1
+          </li>
+          <li class="task-list-item">
+            <input type="checkbox" disabled=""> task 2
+          </li>
+        </ul>
+
+        <dl>
+          <dt>Lower cost</dt>
+          <dd>The new version of this product costs significantly less than the previous one!</dd>
+          <dt>Easier to use</dt>
+          <dd>We've changed the product so that it's much easier to use!</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section>
+      <h2>Images</h2>
+      <div class="markdown">
+        <p><img src="sample.png" alt="Sample image"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="markdown">
+        <p><a href="http://github.com/yamat47/markdown-css">yamat47/markdown-css</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Blockquotes</h2>
+      <div class="markdown">
+        <p>As Kanye West said:</p>
+        <blockquote>
+        <p>We're living the future so<br>
+        the present is our past.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section>
+      <h2>Code block (syntax highlight is not implemented)</h2>
+      <div class="markdown">
+        <pre>
+<code>def get_numbers(list, index = 0, taken = [])
+  return [taken] if index == list.size
+
+  get_numbers(list, index+1, taken) +
+  get_numbers(list, index+1, taken + [list[index]])
+end
+
+get_numbers([1,2,3])
+</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Table</h2>
+      <div class="markdown">
+        <table>
+          <thead>
+            <tr>
+              <th align="center">Header</th>
+              <th>Header</th>
+              <th align="left">Header</th>
+              <th align="right">Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">Cell</td>
+              <td>Cell</td>
+              <td align="left">Cell</td>
+              <td align="right">Cell</td>
+            </tr>
+            <tr>
+              <td align="center">Cell</td>
+              <td>Cell</td>
+              <td align="left">Cell</td>
+              <td align="right">Cell</td>
+            </tr>
+            <tr>
+              <td align="center">Cell</td>
+              <td>Cell</td>
+              <td align="left">Cell</td>
+              <td align="right">Cell</td>
+            </tr>
+            <tr>
+              <td align="center">Cell</td>
+              <td>Cell</td>
+              <td align="left">Cell</td>
+              <td align="right">Cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Summary / Details</h2>
+      <div class="markdown">
+        <details>
+         <summary>Summary Goes Here</summary>
+         ...this is hidden, collapsable content...
+        </details>
+      </div>
+    </section>
+  </body>
+</html>

@@ -4,6 +4,7 @@
   "description": "Styles for markdown content.",
   "scripts": {
     "build": "sass scss/markdown.scss markdown.css --style=compressed --no-source-map",
+    "demo-build": "sass scss/markdown.scss docs/markdown.css --style=compressed --no-source-map",
     "prepublishOnly": "npm run build"
   },
   "main": "markdown.css",
