@@ -6,11 +6,7 @@
     "build": "sass scss/markdown.scss markdown.css --style=compressed --no-source-map",
     "prepublishOnly": "npm run build"
   },
-  "main":"markdown.css",
-  "dependencies": {
-    "sass": "^1.32.8"
-  },
-  "devDependencies": {},
+  "main": "markdown.css",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/yamat47/markdown-css.git"
@@ -20,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yamat47/markdown-css/issues"
   },
-  "homepage": "https://github.com/yamat47/markdown-css#readme"
+  "homepage": "https://github.com/yamat47/markdown-css#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
 }
