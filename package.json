@@ -1,8 +1,24 @@
 {
+  "name": "@yamat47/markdown-css",
+  "version": "0.0.1",
+  "description": "Styles for markdown content.",
   "scripts": {
-    "build": "sass scss/markdown.scss markdown.css --style=compressed --no-source-map"
+    "build": "sass scss/markdown.scss markdown.css --style=compressed --no-source-map",
+    "prepublishOnly": "npm run build"
   },
+  "main":"markdown.css",
   "dependencies": {
     "sass": "^1.32.8"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yamat47/markdown-css.git"
+  },
+  "author": "Takuya Yamaguchi <yamat47.thirddown@gmail.com> (https://github.com/yamat47)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yamat47/markdown-css/issues"
+  },
+  "homepage": "https://github.com/yamat47/markdown-css#readme"
 }
