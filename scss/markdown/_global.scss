@@ -1,6 +1,7 @@
 .markdown {
   * {
     box-sizing: border-box;
+    line-height: 1.75em
   }
 
   &:after,
@@ -30,6 +31,6 @@
   table,
   ul {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
